@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <script src="{{ url_for('static', filename='ckplayer/ckplayer.js') }}"></script>
+
+</head>
+<body>
+
+<div class="row mt-3">
+    <div class="col-md-8 col-sm-12 col-12 align-self-center" id="video" style="height: 450px;"></div>
+</div>
+
+</body>
+
+<script>
+var videoObject = {
+    container: '#video',
+    variable: 'player',
+    autoplay: true,
+    video: '/static/Wildlife.mp4'
+};
+var player = new ckplayer(videoObject);
+</script>
+</html>
